@@ -1,0 +1,99 @@
+.usp-banner {
+    padding: 2rem 0;
+    background-color: #fff;
+  
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+  
+    .col-md-3 {
+      display: flex;
+      align-items: center;
+      width: 25%;
+      
+      &:not(:last-child)::after {
+        content: '';
+        width: 1px;
+        height: 40px;
+        background-color: #d6d7d8;
+        margin: 0 1rem;
+      }
+      
+      @media (max-width: 992px) {
+        width: 50%;
+        margin-bottom: 1.5rem;
+        
+        &:not(:last-child)::after {
+          display: none;
+        }
+        
+        &:nth-child(1), &:nth-child(2) {
+          margin-bottom: 1.5rem;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        justify-content: center;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      justify-content: center;
+      
+      @media (max-width: 992px) and (min-width: 577px) {
+        justify-content: center;
+      }
+      
+      @media (max-width: 576px) {
+        justify-content: center;
+        padding: 0;
+        max-width: 80%;
+      }
+      
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: contain;
+      }
+  
+      .content {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2;
+      }
+  
+      .title {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 0.25rem;
+        
+        &:hover {
+          color: $primary;
+        }
+      }
+  
+      .strapline {
+        font-size: 0.9rem;
+        color: #000;
+        
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }

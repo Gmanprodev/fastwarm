@@ -3,116 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Just your compiled CSS which includes Bootstrap -->
     <link href="/dist/css/styles.css" rel="stylesheet">
-    <title>Responsive Bootstrap Page</title>
+    <title>Fastwarm Installation Page</title>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="top-banner">
         <div class="container">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="trustpilot">
+            <img src="assets/images/trust-pilot.png" alt="Trustpilot rating" class="w-full h-auto">
+            </div>
+            <div class="top-banner__contact">
+            <div class="contact-item">
+                <img src="assets/images/phone-icon.png" alt="" class="w-25">
+                <a href="tel:+448000234203" class="text-decoration-none">
+                    <span>0800 023 4203</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <img src="assets/images/phone-icon.png" alt="" class="w-25">
+                <a href="tel:+448000234203" class="text-decoration-none">
+                    <span>01268 744479</span>
+                </a>
+            </div>
+            <div class="contact-item">
+                <img src="assets/images/email-icon.png" alt="" class="h-25">
+                <a href="mailto:enquiries@fastwarm.co.uk" class="text-decoration-none">
+                    <span>enquiries@fastwarm.co.uk</span>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <nav class="main-nav">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+              <a href="#">
+                <img src="assets/images/fastwarm-logo.svg" alt="Logo" class="w-75 h-auto">
+              </a>
+            </div>
+            <div class="main-nav__burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="main-nav__links">
+              <a href="#" class="nav-link">Our Products <i class="icon-arrow-down"></i></a>
+              <a href="#" class="nav-link">Knowledge Hub</a>
+              <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">Contact</a>
+              <button class="btn primary-button">Get a quote</button>
+              <div class="main-nav__actions">
+                <img src="assets/images/search-icon.png" alt="" class="">
+                <div class="icon-divider"></div>
+                <img src="assets/images/person-icon.png" alt="">
+                <div class="icon-divider"></div>
+                <img src="assets/images/trolley-icon.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="container">
+        <h1 class="hero__title">Need your system Installed?</h1>
+        <p class="hero__subtitle">No problem, we have a vast network of recommended installers across the UK who can help</p>
+        <button class="btn secondary-button">Get in touch</button>
+        </div>
+    </section>
+    
+    <section class="usp-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="usp-banner__item">
+                        <img src="assets/images/icon-lifetime-warranty-rosette.svg" alt="">
+                        <div class="content">
+                            <span class="title">Lifetime Warranty</span>
+                            <span class="strapline">On electric systems</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-banner__item">
+                        <img src="assets/images/icon-truck.svg" alt="">
+                        <div class="content">
+                            <span class="title">Next Day Delivery</span>
+                            <span class="strapline">UK Mainland</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-banner__item">
+                        <img src="assets/images/icon-circle-tick.svg" alt="">
+                        <div class="content">
+                            <span class="title">Price Match Promise</span>
+                            <span class="strapline">We won't be beaten</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="usp-banner__item">
+                        <img src="assets/images/icon-thumbs-up.svg" alt="">
+                        <div class="content">
+                            <span class="title">30 Day Money Back</span>
+                            <span class="strapline">Guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-cards">
+        <div class="sub-container px-5">
+            <div class="product-cards__header text-center">
+                <h2>Our recommended installers are 3rd party however highly qualified in Underfloor Heating.</h2>
+                <p>Ranging from Underfloor Heating Specialist, Plumber, Electricians, screeding companies and MCS accredited installers also.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="assets/images/water-installer.jpg" alt="Water System" class="product-card__main-image">
+                            <img src="assets/images/Pipe2.png" alt="Overlay" class="product-card__overlay-image">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Water System Installers</h3>
+                            <p class="product-card__subtitle">What is included:</p>
+                            <ul class="product-card__list">
+                                <li><img src="assets/images/tick.png" alt="tick">Install of Underfloor Heating pipe</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Connection to Manifold</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Pressure Testing</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Connection to heat source</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Wiring of controls</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Commissioning</li>
+                            </ul>
+                            <div class="product-card__footer">
+                                <div class="price-column">
+                                    <span>From:</span>
+                                    <span class="price">£50.00</span>
+                                    <span class="unit">PER M2</span>
+                                </div>
+                                <div class="action-column">
+                                    <button class="btn primary-button">Get in touch</button>
+                                    <a href="#" class="about-link">
+                                        <img src="assets/images/info.png" alt="icon">
+                                        <span>About Water Systems</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="product-card">
+                        <div class="product-card__image-wrapper">
+                            <img src="assets/images/electric-installer.png" alt="Electric System" class="product-card__main-image">
+                            <img src="assets/images/matt-2.png" alt="Overlay" class="product-card__overlay-image">
+                        </div>
+                        <div class="product-card__content">
+                            <h3 class="product-card__title">Electric System Installers</h3>
+                            <p class="product-card__subtitle">What is included:</p>
+                            <ul class="product-card__list">
+                                <li><img src="assets/images/tick.png" alt="tick">Install of Insulation Board and Underfloor Heating System</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Testing</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Connection to thermostat and wiring of power supply</li>
+                                <li><img src="assets/images/tick.png" alt="tick">Levelling over system if required</li>
+                            </ul>
+                            <div class="product-card__footer">
+                                <div class="price-column">
+                                    <span>From:</span>
+                                    <span class="price">£20.00</span>
+                                    <span class="unit">PER M2</span>
+                                </div>
+                                <div class="action-column">
+                                    <button class="btn primary-button">Get in touch</button>
+                                    <a href="#" class="about-link">
+                                        <img src="assets/images/info.png" alt="icon">
+                                        <span>About Electric Systems</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-1200">
+        <div class="map">
+            <div class="map__wrapper">
+                <div class="map__box">
+                    <h2 class="map__title">You can call on our Nationwide Installers*</h2>
+                    <p class="map__text">We can recommend installers Nationwide who provide a full comprehensive service</p>
+                    <a href="#" class="btn btn-white">Get in touch</a>
+                </div>
+                <p class="map__disclaimer">*All installers are 3rd party.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-1200">
+        <div class="installer-banner">
+            <div class="installer-banner__wrapper">
+                <div class="installer-banner__content">
+                    <h2 class="installer-banner__title">
+                        Looking to become a Fastwarm recommended installer?
+                        <span>Get in touch today.</span>
+                    </h2>
+                    
+                    <div class="installer-banner__benefits">
+                        <p>Benefit from:</p>
+                        <ul>
+                            <li>
+                                <img src="/assets/images/tick.svg" alt="Tick" class="tick-icon">
+                                Special Installers Pricing
+                            </li>
+                            <li>
+                                <img src="/assets/images/tick.svg" alt="Tick" class="tick-icon">
+                                Recommendation for install using our Fastwarm Products
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="installer-banner__logo">
+                        <img src="/assets/images/fastwarm-logo.svg" alt="Fastwarm Logo">
+                    </div>
+                </div>
+    
+                <div class="installer-banner__badge">
+                    <h3>Installed by fully qualified tradesmen</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-1200 awards-cards">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="assets/images/cta---award-winning-2.jpg" alt="Water System" class="award-card__main-image">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/cta---price-match-2.jpg" alt="Electric System" class="award-card__main-image">
+                </div>
+                <div class="col-md-4">
+                    <img src="assets/images/cta---request-quote-2.jpg" alt="Electric System" class="award-card__main-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-1200">
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h4>Electric Systems</h4>
+              <ul>
+                <li><a href="#">Electric Underfloor Heating</a></li>
+                <li><a href="#">Insulation & Fixing Systems</a></li>
+                <li><a href="#">Thermostats & Controls</a></li>
+                <li><a href="#">Tile Adhesives & Levelling Compounds</a></li>
+                <li><a href="#">Water Underfloor Heating</a></li>
+                <li><a href="#">Water Systems</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Electric Systems</h4>
+                <ul>
+                  <li><a href="#">Electric Underfloor Heating</a></li>
+                  <li><a href="#">Insulation & Fixing Systems</a></li>
+                  <li><a href="#">Thermostats & Controls</a></li>
+                  <li><a href="#">Tile Adhesives & Levelling Compounds</a></li>
+                  <li><a href="#">Water Underfloor Heating</a></li>
+                  <li><a href="#">Company</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Components</h4>
+                <ul>
+                <li><a href="#">Thermostats</a></li>
+                <li><a href="#">Insulation</a></li>
+                <li><a href="#">Fixings</a></li>
+                <li><a href="#">Electric Accessories</a></li>
+                <li><a href="#">Water Components</a></li>
+                <li><a href="#">Water Install Tools</a></li>
+                <li><a href="#">Wetrooms</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Fastwarm</h4>
+                <ul>
+                <li><a href="#">Why Use Us?</a></li>
+                <li><a href="#">Lifetime Warranty</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ's</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <div class="bg-light py-5">
-        <div class="container text-center">
-            <h1 class="display-4">Welcome to Our Site</h1>
-            <p class="lead">A responsive website built with Bootstrap 5.3</p>
-        </div>
-    </div>
-
-    <!-- Card Grid -->
-    <div class="container py-5">
-        <div class="row g-4">
-            <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                    <img src="/assets/images/matt-2.png" class="card-img-top" alt="Card image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title 1</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
+      
+        <div class="container-900">
+          <div class="footer__payment-methods">
+            <img src="/assets/images/payment-logos.png" alt="Payment methods accepted">
+          </div>
+      
+          <div class="footer__legal">
+            Fastwarm Ltd registered office Lodge Way House, Lodge Way, Harlestone Road, Northampton, NN5 7UG Company registration number 05687171. The Underfloor Heating Store Ltd acts as a broker and offers credit from a restricted range of finance providers. Subject to status, terms and conditions apply.
+          </div>
+      
+          <div class="footer__copyright">
+            <div>© 2020 Fastwarm</div>
+            <div class="footer__social">
+                <img src="/assets/images/social-icons.png" alt="Payment methods accepted">
             </div>
-            <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                    <img src="/assets/images/matt-2.png" class="card-img-top" alt="Card image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title 2</h5>
-                        <p class="card-text">Another quick example text to showcase the card's content and demonstrate grid layout.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100">
-                    <img src="/assets/images/matt-2.png" class="card-img-top" alt="Card image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card Title 3</h5>
-                        <p class="card-text">A third example showing how the cards align perfectly in the responsive grid system.</p>
-                        <a href="#" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light py-4 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <h5>About Us</h5>
-                    <p class="text-muted">A brief description about your company or website goes here.</p>
-                </div>
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Terms of Service</a></li>
-                        <li><a href="#" class="text-muted text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact Info</h5>
-                    <ul class="list-unstyled text-muted">
-                        <li>Email: info@example.com</li>
-                        <li>Phone: (123) 456-7890</li>
-                        <li>Address: 123 Street Name, City</li>
-                    </ul>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="text-center text-muted">
-                <small>&copy; 2025 Your Company. All rights reserved.</small>
-            </div>
+          </div>
         </div>
     </footer>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 </body>

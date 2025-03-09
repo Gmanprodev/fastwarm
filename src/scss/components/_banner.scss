@@ -1,0 +1,33 @@
+.top-banner {
+    background-color: #f5f5f5;
+    padding: 0.5rem 0;
+    font-size: $font-size-xs;
+    color: $text-dark;
+  
+    &__contact {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0rem;
+      }
+    }
+    
+    @media (max-width: 1199px) {
+      &__contact {
+        display: none;
+      }
+      
+      .d-flex {
+        justify-content: center !important;
+      }
+      
+      .trustpilot {
+        margin: 0 auto;
+      }
+    }
+  }
+  
